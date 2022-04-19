@@ -1,5 +1,24 @@
+body {font-family:'Times New Roman', Times, serif;
+    padding: 25px;
+    background-image: 
+}
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
+nav a {
+    display: inline;
+    text-decoration: none;
     color: black;
+}
+
+#English {
+    text-align: left;
+}
+
+#Vietnamese {
+    text-align: right;
+}
+body {
+}
+
+footer {
+    text-align: center;
 }
