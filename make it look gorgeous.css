@@ -1,22 +1,36 @@
 body {font-family:'Times New Roman', Times, serif;
-    padding: 25px;
-    background-image: 
-}
-
-nav a {
-    display: inline;
+    padding: 30px;
+    color: white;
     text-decoration: none;
-    color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url('LinkedIn Copy/IMG_3521.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#English {
-    text-align: left;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#Vietnamese {
-    text-align: right;
+header a {
+    text-decoration: none;
+    color: white;
 }
-body {
+
+.name {
+    font-size: 50px;
+}
+
+.nav {
+    font-size: 25px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 footer {
