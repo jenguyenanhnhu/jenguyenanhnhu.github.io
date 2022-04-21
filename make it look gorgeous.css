@@ -1,5 +1,4 @@
 body {font-family:'Times New Roman', Times, serif;
-    padding: 30px;
     color: white;
     text-decoration: none;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),
@@ -12,6 +11,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px;
+    border-bottom: solid white 1px;
 }
 
 header a {
@@ -27,12 +28,19 @@ header a {
     font-size: 25px;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: white 1px solid;
+}
+
+.Acknowledgement-of-Country {
+    display: block;
+}
+
 #social-media {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
 }
 
-footer {
-    text-align: center;
-}
