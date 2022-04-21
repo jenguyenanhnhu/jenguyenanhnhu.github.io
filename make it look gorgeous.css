@@ -1,10 +1,11 @@
 body {font-family:'Times New Roman', Times, serif;
     color: white;
     text-decoration: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)), url('LinkedIn Copy/IMG_3521.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('LinkedIn Copy/IMG_3521.JPG');
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 25px;
 }
 
 header {
@@ -15,27 +16,121 @@ header {
     border-bottom: solid white 1px;
 }
 
-header a {
+a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+}
+
+a:hover {
+    color: black;
+    border: white solid;
+    background-color: white;
 }
 
 .name {
-    font-size: 50px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .nav {
-    font-size: 25px;
+    font-size: 20px;
+}
+
+#highlighted {
+    color: black;
+    border: white solid;
+    background-color: white;
+}
+
+.index-middle {
+    font-size: 40px;
+    margin: 20px;
+}
+
+#passions {
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    padding: 55px;
+}
+
+#publications {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 50px auto;
+    width: 90%;
+}
+
+#form-description {
+    text-align: center;
+    padding: 70px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.form-item label {
+    flex-basis: 125px;
+    font-size: 20px;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 50%;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.form-item button {
+    width: 100px;
+}
+
+.form-item button:hover {
+    background-color: grey;
+}
+
+#projects-display {
+    text-align: center;
+}
+
+.individual-projects {
+    background-color: rgba(188, 188, 188, 0.345);
+    padding: 15px;
+    width: calc(100% / 3 - 10%);
+    text-align: center;
+    margin: 15px;
+    display: inline-block;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     border-top: white 1px solid;
-}
-
-.Acknowledgement-of-Country {
-    display: block;
 }
 
 #social-media {
