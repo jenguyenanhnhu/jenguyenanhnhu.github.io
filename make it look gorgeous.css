@@ -1,9 +1,8 @@
 body {font-family:'Times New Roman', Times, serif;
     color: white;
     text-decoration: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url('LinkedIn Copy/IMG_3521.JPG');
-    background-size: cover;
+    background-color: black;
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 25px;
 }
@@ -25,6 +24,7 @@ a {
 a:hover, #highlighted {
     border: white solid;
     background-color: rgba(188, 188, 188, 0.345);
+    display: block;
 }
 
 .name {
@@ -61,6 +61,86 @@ a:hover, #highlighted {
 
 h1 {
     text-align: center;
+}
+
+.timeline {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-element {
+    padding: 10px;
+    position: relative;
+    background-color: rgba(188, 188, 188, 0.345);
+    width: 20%;
+}
+
+.timeline-date {
+    content: '';
+    position: absolute;
+    padding: 15px;
+    word-wrap: break-word;    
+    height: 25px;
+    right: -175px;
+    background-color: rgba(188, 188, 188, 0.345);
+    border: 2px solid white;
+    border-radius: 50px;
+    top: 15px;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgba(188, 188, 188, 0.345);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline-element-description {
+    position: relative;
+    border-radius: 6px;
 }
 
 form {
@@ -124,11 +204,6 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.project-image: hover {
-    background-color: rgba(188, 188, 188, 0.345)
-    border: rgba(188, 188, 188, 0.345);
 }
 
 footer {
