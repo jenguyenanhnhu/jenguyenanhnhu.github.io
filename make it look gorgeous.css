@@ -2,8 +2,6 @@ body {font-family:'Times New Roman', Times, serif;
     color: white;
     text-decoration: none;
     background-color: black;
-    background-size: contain;
-    background-repeat: no-repeat;
     margin: 25px;
     text-align: center;
 }
@@ -18,6 +16,7 @@ a:hover, #highlighted, .left-button:hover, .right-button:hover {
     background-color: rgba(188, 188, 188, 0.345);
     display: block;
     padding: 10px;
+    font-size: bold;
 }
 
 .paragraph-hyperlink:hover {
@@ -37,13 +36,13 @@ h4 {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 25px;
     border-bottom: solid white 1px;
 }
 
 .name {
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .nav {
@@ -105,7 +104,6 @@ header {
     display: none;
     object-fit: contain;
     height: 800px;
-    padding: 10px;
 }
 
 .slideshow-display {
@@ -182,14 +180,6 @@ header {
     margin: 30px 0;
 }
 
-.timeline-date {
-    border-radius: 25%;
-    border: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .timeline-element::after {
     content: '';
     position: absolute;
@@ -231,19 +221,25 @@ h5 {
 span {
     display: inline-block;
     box-sizing: border-box;
-    left: 107%;
-    width: 25%;
+    left: 111%;
     position: absolute;
     top: 42%;
-    word-wrap: break-word;
-    border-radius: 0%;
+    width: 100px;
     font-size: 20px;
 }
 
 .right-date {
-    left: -31%;
+    left: -26%;
     top: 42%;
 }
+
+#image1 {
+    object-position: 0% 20%;
+}
+
+#image2 {
+    object-position: bottom;
+} 
 
 /* Projects */
 #projects-display {
@@ -266,14 +262,6 @@ span {
     height: 300px;
     display: flex;
     justify-content: center;
-}
-
-#image1 {
-    object-position: 0% 20%;
-}
-
-#image2 {
-    object-position: bottom;
 }
 
 /* Contact*/
@@ -333,4 +321,174 @@ footer {
 }
 
 /* Media Queries (mobiles) */
+@media (max-width: 450px) {
+    body {
+        margin: 10px;
+        font-size: 12px;
+    }
+    
+    a:hover, #highlighted, .left-button:hover, .right-button:hover {
+        padding: 5px;
+    }
+    
+    /* Header */
+    header {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .name {
+        font-size: 16px;
+        word-wrap: break-word;
+        width: 120px;
+    }
+    
+    .nav {
+        font-size: 10px;
+    }
+    
+    .index-middle {
+        font-size: 10px;
+        margin: 7px;
+    }
+    
+    /* Index page */
+    #background-image {
+        background-position: center;
+        height: 100%;
+    }
+    
+    .introduction {
+        padding: 10px;
+    }
 
+    #index-title {
+        margin: 300px 0 0 0;
+        font-size: 30px;
+    }
+    
+    /* About */
+    .slideshow-image {
+        object-fit: contain;
+        height: 250px;
+    }
+    
+    .slideshow-display {
+        bottom: 50%;
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    /* Timeline (publications) */
+    .timeline {
+        padding: 10px;
+    }
+    
+    .timeline::after {
+        left: 5%;
+        width: 3px;
+    }
+    
+    .timeline-element {
+        width: 90%;
+        margin: 10px 0;
+        left: 5%;
+        padding-bottom: 20px;
+    }
+    
+    .timeline-element::after {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .left::after, .right::after {
+        left: -7%;
+    }
+    
+    .right {
+        left: 5%;
+    }
+    
+    .timeline-title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    h5 {
+        margin: 5px;
+    }
+    
+    span, .right-date {
+        left: 42%;
+        position: absolute;
+        top: 95%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #image1 {
+        object-position: 0% 20%;
+    }
+    
+    #image2 {
+        object-position: bottom;
+    }
+
+    #image3 {
+        object-position: 0%;
+    }
+    
+    /* Projects */
+    #projects-display {
+        display: block;
+    }
+    
+    .individual-project {
+        padding: 10px;
+        width: 90%;
+        margin: 15px 0;
+    }
+    
+    .project-image {
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+    }
+    
+    /* Contact*/
+    form {
+        margin: 10px auto;
+        width: 100%;
+    }
+    
+    #form-description {
+        padding: 10px;
+    }
+    
+    .form-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    .form-item label {
+        flex-basis: 20%;
+        font-size: 12px;
+    }
+    
+    .form-item input,
+    .form-item textarea {
+        flex-basis: 70%;
+    }
+
+    .form-item input,
+    .form-item textarea,
+    .form-item button {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
