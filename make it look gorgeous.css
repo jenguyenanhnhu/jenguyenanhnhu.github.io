@@ -59,7 +59,7 @@ header {
 
 /* Index page */
 #background-image {
-    background-image: url('Images/BackBusinessCard.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('Images/BackBusinessCard.png');
     background-size: cover;
     height: 100%;
 }
