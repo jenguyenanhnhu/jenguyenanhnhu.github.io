@@ -11,7 +11,7 @@ body {font-family:'Alata', serif;
 
 a {
     text-decoration: none;
-    color: #67b435;
+    color: white;
 }
 
 a:hover, #highlighted, .left-button:hover, .right-button:hover {
@@ -49,6 +49,7 @@ header {
 
 .nav {
     font-size: 28px;
+    color: #67b435;
 }
 
 .index-middle {
