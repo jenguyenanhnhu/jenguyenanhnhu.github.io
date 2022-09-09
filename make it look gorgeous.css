@@ -59,7 +59,7 @@ h4 {
 
 /* Index page */
 #background-image {
-    background-image: url('Images/Back\ Business\ Card.png')
+    background-image: url('Images/BackBusinessCard.png');
     background-size: cover;
     height: 100%;
 }
