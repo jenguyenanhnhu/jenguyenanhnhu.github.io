@@ -17,7 +17,7 @@ a {
 a:hover, #highlighted, .left-button:hover, .right-button:hover {
     background-color: rgba(188, 188, 188, 0.345);
     display: block;
-    padding: 5px;
+    margin: 5px 10px;
     color: white;
 }
 
@@ -41,6 +41,7 @@ header {
     justify-content: space-around;
     padding: 25px;
     border-bottom: solid white 1px;
+    color: #67b435;
 }
 
 .name {
@@ -49,7 +50,6 @@ header {
 
 .nav {
     font-size: 28px;
-    color: #67b435;
 }
 
 .index-middle {
