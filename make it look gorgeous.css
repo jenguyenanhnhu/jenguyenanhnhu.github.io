@@ -36,7 +36,7 @@ h4 {
 }
 
 /* Nav page */
-/* header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,7 +55,7 @@ h4 {
 .index-middle {
     font-size: 40px;
     margin: 20px;
-} */
+}
 
 /* Index page */
 #background-image {
