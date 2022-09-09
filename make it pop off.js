@@ -1,4 +1,15 @@
+
+// Nav Bar
+const nav = document.querySelector('nav')
+fetch('/nav.html')
+.then(res=>res.text())
+.then(data=>{
+    nav.innerHTML=data
+})
+
+
 // Slideshow
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

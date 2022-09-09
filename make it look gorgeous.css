@@ -1,4 +1,6 @@
-body {font-family:'Times New Roman', Times, serif;
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {font-family:'Alata', sans-serif;
     color: white;
     text-decoration: none;
     background-color: black;
@@ -33,8 +35,8 @@ h4 {
     font-weight: lighter;
 }
 
-/* Header of every page */
-header {
+/* Nav page */
+/* header {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -53,11 +55,11 @@ header {
 .index-middle {
     font-size: 40px;
     margin: 20px;
-}
+} */
 
 /* Index page */
 #background-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('LinkedIn copy/IMG_3521.JPG'); 
+    background-image: url('Images/Back\ Business\ Card.png')
     background-size: cover;
     height: 100%;
 }
