@@ -39,14 +39,16 @@ nav {
     align-items: center;
     justify-content: space-around;
     color: #67b435;
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    padding: 20px;
 }
 
+ul {
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    position: fixed;
+}
 .name {
     font-size: 40px;
     color: #67b435;
