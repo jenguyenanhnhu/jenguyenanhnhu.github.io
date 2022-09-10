@@ -34,8 +34,8 @@ h4 {
 }
 
 /* Nav page */
-nav {
-    display: inline-block;
+.nav {
+    display: flex;
     align-items: center;
     justify-content: space-around;
     color: #67b435;
