@@ -22,7 +22,6 @@ a:hover, #highlighted, .left-button:hover, .right-button:hover {
 }
 
 .paragraph-hyperlink:hover {
-    font-size: bolder;
     display: inline;
     border: none;
     padding: 0;
