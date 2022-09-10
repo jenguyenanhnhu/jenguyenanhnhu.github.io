@@ -68,6 +68,7 @@ header {
     padding: 50px;
     align-items: flex-end;
     display: block;
+    margin: 0;
 }
 
 #index-title {
