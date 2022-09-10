@@ -38,11 +38,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: solid white 1px;
     color: #67b435;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .name {
@@ -312,7 +314,6 @@ form {
 /* Footer */
 footer {
     padding: 15px;
-    border-top: white 1px solid;
 }
 
 #social-media {
