@@ -12,13 +12,14 @@ body {font-family:'Alata', serif;
 a {
     text-decoration: none;
     color: white;
+    margin: 5px;
 }
 
 a:hover, #highlighted, .left-button:hover, .right-button:hover {
     background-color: rgba(188, 188, 188, 0.345);
     display: block;
-    /* margin: 5px 10px 5px 10px; */
     color: white;
+    border-radius: 10%;
 }
 
 .paragraph-hyperlink:hover {
@@ -41,8 +42,6 @@ header {
     color: #67b435;
     margin: 0;
     padding: 20px;
-    top: 0;
-    width: 100%;
     list-style-type: none;
     position: fixed;
 }
@@ -68,7 +67,7 @@ header {
     height: 100%;
 }
 
-.introduction {
+.background {
     align-items: flex-end;
     display: block;
     margin: 0;
