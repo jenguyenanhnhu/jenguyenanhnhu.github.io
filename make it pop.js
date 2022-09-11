@@ -15,6 +15,21 @@ fetch('/footer.html')
     footer.innerHTML=data
 })
 
-$(document).ready(function() {
-    $('#fullpage').fullpage();
-});
+const skrllr = new Skrllr('main', {
+    // child container
+    container: 'section',
+    // easing function
+    easing: 'ease',
+    // transition time in ms
+    transitionTime: 1000,
+    // shows pagination
+    pagination: true,
+    // custom menu
+    menu: null,
+    // auto update url when switching
+    updateURL: false,
+    // callback functions
+    beforeTransition: null,
+    afterTransition: null
+    
+})
