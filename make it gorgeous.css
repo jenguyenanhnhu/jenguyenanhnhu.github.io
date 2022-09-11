@@ -23,12 +23,6 @@
     overflow: hidden;
 }
 
-.main-menu {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-}
-
 .pagination { list-style: none; }
 .pagination li {
     position: relative;
@@ -68,7 +62,7 @@ a {
     margin: 5px;
 }
 
-a:hover, #highlighted, .left-button:hover, .right-button:hover {
+a:hover, {
     background-color: rgba(188, 188, 188, 0.345);
     display: block;
     color: white;
@@ -88,7 +82,7 @@ h4 {
 }
 
 /* Nav page */
-.nav {
+.main-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,7 +93,13 @@ h4 {
     font-size: 28px;
 }
 
-.name {
+.main-menu {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+
+#name {
     font-size: 40px;
 }
 
