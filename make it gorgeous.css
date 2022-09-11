@@ -1,52 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-/* Make it scrollable */
-.skrllr-fullpage {
-    position: relative;
-    display: block;
-    width: 100vw;
-    height: 100%;
-    padding: 0;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.skrllr-section {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-.fullpage {
-    height: 100% !important;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.pagination { list-style: none; }
-.pagination li {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px
-}
-
-.pagination li a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    margin-bottom: 10px
-}
-
-.pagination li a:hover,  .pagination li a.active {
-    background-color: white;
-    border: 2px solid black;
-}
-
 body {font-family:'Alata', serif;
     color: white;
     text-decoration: none;
@@ -54,6 +7,8 @@ body {font-family:'Alata', serif;
     margin: 25px;
     text-align: center;
     font-size: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('Images/BackBusinessCard.png');
+    background-size: cover;
 }
 
 a {
@@ -82,7 +37,7 @@ h4 {
 }
 
 /* Nav page */
-.main-menu {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,31 +48,21 @@ h4 {
     font-size: 28px;
 }
 
-.main-menu {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-}
-
 #name {
     font-size: 40px;
 }
 
 /* Index page */
-#background-image {
+/* #background-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('Images/BackBusinessCard.png');
     background-size: cover;
     height: 100%;
-}
+} */
 
 .background {
     align-items: flex-end;
     display: block;
     margin: 0;
-}
-
-#index-title {
-    margin: 50px 0 0 0;
 }
 
 /* About */
@@ -175,17 +120,6 @@ h4 {
     right: 5%;
 }
 
-/* .demo {
-    background-color: rgba(188, 188, 188, 0.345) !important;
-    border: white solid 1px !important;
-    display: inline-block;
-    padding: 0;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-} */
 
 /* Timeline (publications/about) */
 .timeline {
