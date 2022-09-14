@@ -1,16 +1,23 @@
 
+function fadeHomeScreen() {
+    var indexFade = document.getElementsByClassName("fadein"), i = 1;
+    Object.values(indexFade).forEach(el => {
+        setTimeout(() => {
+            el.classList.add("visible")
+        }, 1000*i)
+        i++;
+    });
+}
 
-$(".fadeIn").hide().each(fuction(i) {
-    $(this).delay(i*1500).fadeIn(1500)}
-);
+window.addEventListener('load', () => { 
+    fadeHomeScreen();
+}, false);
 
-//     document.getElementsByClassName("fadein").opacity = 1;
-// };
 
 // Acknowledgement of Country
 var i = 0;
 var txt = 'Based on Turrbal and Yuggera land in Meanjin, I acknowledge the sovereignty and custodianship of Elders past, present, and emerging of the many Countries that make up Indigenous Australia.'
-var speed = 100;
+var speed = 125;
 
 window.onload=function typeWriter() {
     if (i < txt.length) {
@@ -54,16 +61,4 @@ window.onload=function typeWriter() {
 // targets.forEach(function (target) {
 //     target.classList.add("opacity-0");
 //     observer.observe(target);
-// });
-
-
-//   // Fade out "scroll down" arrow
-// const target = document.querySelector('#theTarget');
-// const arrrow = document.getElementById("scroll-arrow")
-
-// document.addEventListener('scroll', () => {
-//     if (window.scrollY >= target.getBoundingClientRect().top) {
-//         scroll-arrrow.classList.add("animate-fadeOut");
-//         scroll-arrrow.classList.add("opacity-0");
-//     }
 // })
