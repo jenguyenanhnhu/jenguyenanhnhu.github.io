@@ -2,7 +2,7 @@
 
 /* Home Dragon */
 #home-dragon {
-    max-width: 99%;
+    max-width: 95%;
     max-height: auto;
 }
 
@@ -15,21 +15,21 @@
     opacity: 1;
 }
 
-.index {
+#index {
     position: relative;
     font-size: 40px;
     color: #67b435;
 }
 
 #english {
-    position: absolute;
+    position: fixed;
     top: 2%;
-    left: 1%;
+    left: 2.5%;
 }
 
 #vietnamese {
-    position: absolute;
-    bottom: 2%;
+    position: fixed;
+    bottom: 2.5%;
     right: 1.5%;
 }
 
@@ -38,22 +38,22 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     width: 50%;
-    position: absolute;
-    right: -2%;
-    top: 2%;
+    position: fixed;
+    right: 1%;
+    top: 3%;
     font-size: 20px;
 }
 
 nav a {
-    padding: 0 20px; 
+    padding: 5px 20px; 
     color: #67b435;
 }
 
 #social-media {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 0%;
+    position: fixed;
+    right: 1%;
     top: 35%;
 }
 
@@ -61,11 +61,60 @@ nav a {
     font-weight: 300;
     font-style: italic;
     font-size: 10px;
-    position: absolute;
-    bottom: 2%;
-    left: 1%;
+    position: fixed;
+    bottom: 2.5%;
+    left: 2.5%;
     color: #67b435;
     
+}
+
+/* About */
+#about {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 200px;
+    gap: 50px;
+    height: 320px;
+}
+
+#introduction {
+    color: #67b435;
+    text-align: left;
+}
+
+#introduction h2 {
+    font-size: 36px;
+    margin: 10px;
+}
+
+#profile {
+    border-radius: 15%;
+    margin: 0;
+    height: 25%;
+}
+
+/* Projects */
+#projects-display {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    gap: 25px;
+}
+
+.individual-project {
+    background-color: rgba(188, 188, 188, 0.345);
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 body {
@@ -74,12 +123,11 @@ body {
     background-color: black;
     margin: 25px;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
-    margin: 5px;
     color: #67b435;
 
 }
@@ -89,6 +137,10 @@ a:hover {
     display: block;
     color: white;
     border-radius: 25%;
+}
+
+img a:hover {
+    
 }
 
 .paragraph-hyperlink:hover {
@@ -101,14 +153,6 @@ a:hover {
 h4 {
     margin: 0;
     font-weight: lighter;
-}
-
-/* Nav page */
-
-.background {
-    align-items: flex-end;
-    display: block;
-    margin: 0;
 }
 
 
@@ -212,27 +256,7 @@ span {
 } 
 
 /* Projects */
-#projects-display {
-    display: flex;
-    justify-content: center;
-}
 
-.individual-project {
-    background-color: rgba(188, 188, 188, 0.345);
-    padding: 15px;
-    width: calc(100% / 3 - 100px);
-    margin: 15px;
-    display: inline-block;
-    position: relative;
-}
-
-.project-image {
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-}
 
 /* Contact*/
 form {
