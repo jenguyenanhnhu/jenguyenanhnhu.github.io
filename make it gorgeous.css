@@ -21,27 +21,41 @@
     color: #67b435;
 }
 
-#english {
+.topnav {
+    background-color: black;
     position: fixed;
-    top: 2%;
-    left: 2.5%;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomnav {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    display: inline;
+
+}
+
+.sidenav {
+    background-color: black;
+    position: fixed;
+    right: 0;
+}
+
+#english {
 }
 
 #vietnamese {
-    position: fixed;
-    bottom: 2.5%;
     right: 1.5%;
+    padding: 5px 20px;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 50%;
-    position: fixed;
-    right: 1%;
-    top: 3%;
-    font-size: 20px;
+    font-size: 20px; 
+    float: right;
 }
 
 nav a {
@@ -61,11 +75,8 @@ nav a {
     font-weight: 300;
     font-style: italic;
     font-size: 10px;
-    position: fixed;
-    bottom: 2.5%;
     left: 2.5%;
     color: #67b435;
-    
 }
 
 /* About */
@@ -92,6 +103,9 @@ nav a {
     margin: 0;
     height: 25%;
 }
+
+/* Work */
+
 
 /* Projects */
 #projects-display {
@@ -133,14 +147,7 @@ a {
 }
 
 a:hover {
-    background-color: rgba(188, 188, 188, 0.345);
-    display: block;
     color: white;
-    border-radius: 25%;
-}
-
-img a:hover {
-    
 }
 
 .paragraph-hyperlink:hover {
@@ -155,8 +162,6 @@ h4 {
     font-weight: lighter;
 }
 
-
-
 /* Timeline (publications/about) */
 .timeline {
     box-sizing: border-box;
@@ -169,7 +174,7 @@ h4 {
 .timeline::before {
     content: '';
     height: 100%;
-    background: white;
+    background: #67b435;
     position: absolute;
 }
 
@@ -179,7 +184,7 @@ h4 {
     display: flex;
     justify-content: center;
     width: 6px;
-    background-color: white;
+    background-color: #67b435;
     top: 0;
     bottom: 0;
     left: 50%;
