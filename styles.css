@@ -18,8 +18,12 @@ a {
     color: #67b435;
 }
 
-a:hover {
+a:hover, button:hover, nav a:focus, button:focus {
     color: white;
+    border: 1px solid #67b435;
+    border-radius: 24px;
+    background-color: rgba(188, 188, 188, 0.345);
+
 }
 
 /* Home Dragon */
@@ -62,14 +66,14 @@ nav {
 }
 
 nav a {
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .bottomnav {
     background-color: black;
     position: fixed;
     bottom: 0;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     width: 96%;
     display: flex;
     justify-content: space-between;
@@ -83,6 +87,7 @@ nav a {
     color: #67b435;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 #vietnamese {
@@ -107,9 +112,13 @@ nav a {
 #about {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 250px;
-    gap: 50px;
-    height: 320px;
+    padding: 175px 100px;
+    gap: 250px;
+    height: 500px;
+    background-image: url(Images/dragon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 }
 
 #introduction {
@@ -129,19 +138,81 @@ nav a {
 }
 
 /* Projects */
-#projects-display {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
-    gap: 25px;
+
+/* Filter */
+#button-container {
+    padding: 100px 0 50px 0;
 }
 
-.individual-project {
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #67b435;
+    background-color: black;
+    font-size: 20px;
+    border: none;
+}
+
+button.active {
+    background-color: rgba(188, 188, 188, 0.345);
+    color: white;
+}
+
+.all-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    gap: 8px;
+}
+
+.card {
+    float: left;
+    display: none;
+}
+
+.all-cards:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.show {
+    display: block;
+}
+
+/* Flip cards */
+.individual-card {
     background-color: rgba(188, 188, 188, 0.345);
     padding: 15px;
     margin: 15px;
-    display: inline-block;
+    border-radius: 10%;
+}
+
+.individual-card-flip {
     position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.individual-card:hover, .individual-card-flip {
+    transform: rotateY(180deg);
+}
+
+.individual-card-front, .individual-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.individual-card-back {
+    background-color: rgba(188, 188, 188, 0.345);
+    color: #67b435;
+    transform: rotateY(180deg);
 }
 
 .project-image {
@@ -159,6 +230,24 @@ nav a {
     text-decoration: none;
 }
 
+#projects h3 {
+    font-size: 16px;
+}
+
+#projects h4 {
+    font-size: 14px;
+}
+
+#projects p {
+    font-size: 12px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.card-button {
+    border-radius: 24px;
+    border: 1px solid #67b435;
+}
 
 /* Contact*/
 form {
@@ -203,7 +292,6 @@ form {
     background-color: grey;
 }
 
-/* Footer */
 
 
 /* Media Queries (Mobile devices) */

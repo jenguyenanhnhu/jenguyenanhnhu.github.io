@@ -18,7 +18,6 @@
                 <a href="./index.html#about">About</a>
                 <a href="./index.html#work">Experience</a>
                 <a href="./index.html#projects">Projects</a>
-                <a href="./index.html#publications">Publications</a>
                 <a href="./index.html#contact">Contact</a>
             </nav>
         </div>
@@ -50,61 +49,116 @@
     </section>
 
     <section id="projects">
-        <div id="projects-display">
-            <div class="individual-project">
-                <a class="timeline-title" href=""><img src="Images/IMG_3521.JPG" class="project-image" alt="Portfolio website">Portfolio</a>
-                <h4><i>Apr 2022</i></h4>
-                <p>Through <a class="paragraph-hyperlink" href="https://shecodes.com.au/">She Codes Australia</a> 6-month PLUS program, I learnt how to code and created projects to consolidate my learning. My first project was to use a mix of HTML and CSS with a smidgen of JavaScript to create my portfolio website - and you're here!</p>
-            </div>
-        <div class="individual-project">
-            <a class="timeline-title" href="https://www.footnotejournal.com"><img src="Images/footnote.jpg" class="project-image" id="image1" alt="Footnote Journal">Footnote</a>
-            <h4><i>Aug 2020 - present</i></h4>
-            <p>I am the founding President of Footnote, a student journal that celebrates the research and writing of history students. Run by a team of volunteers based at the UQ Modern History Society, Footnote publishes editions biannually and features essays from authors all around the world on a wide range of topics.</p>
+        <div id="button-container">
+            <button class="btn" onclick="filterSelection('all')">Show All</button>
+            <button class="btn" onclick="filterSelection('project')">Projects</button>
+            <button class="btn" onclick="filterSelection('publication')">Publications</button>
         </div>
-        <div class="individual-project">
-            <a class="timeline-title"><img class="project-image" id="image1">Coming Soon</a>
-            <h4><i>future dates</i></h4>
-            <h5></h5>
-            <p></p>
-        </div>
-    </section>
-    
-    <section class="publications">
-        <div>
-            <h1>Check out my writing!</h1>
-            <p>These pieces are based on the research I undertook during my years as an undergraduate history student.</p>
-        </div>
-            <div class="projects-display">
-                <div class="individual-project">
-                    <a href="https://www.footnotejournal.com/am-i-employable-the-perspective-of" class="timeline-title"><img src="Images/footnote article.webp" class="project-image" id="image2" alt="Am I Employable? The Perspective of a History Undergraduate Student in Australia">Am I Employable? The Perspective of a History Undergraduate Student in Australia</a>
-                    <h4><i>4 Apr 2021</i></h4>
-                    <h4><b>Footnote Journal | Essay</b></h4>
-                    <p>When you study history, you get constantly asked, "So what job are you going to get?"</p>
-                    <p>Part-memoir, part-history, and part-analysis, I negotiate the unpredictable demands of labour markets and the fluctuating societal value of the humanities and answer the question: am I employable?</p>
+        <div class="all-cards">
+            <div class="card project">
+                <div class="individual-card">
+                    <div class="individual-card-flip">
+                        <div class="individual-card-front">
+                            <img src="Images/footnote" class="project-image" id="image1" alt="Footnote Journal">
+                        </div>
+                        <div class="individual-card-back">
+                            <h3>Footnote</h3>
+                            <p>I am the founding President of Footnote, a student journal that celebrates the research and writing of history students.</p>
+                            <a href="https://www.footnotejournal.com"><button class="card-button">See Footnote</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-                <div class="individual-project">
+            <div class="card project">
+                <div class="individual-card">
+                    <div class="individual-card-flip">
+                        <div class="individual-card-front">
+                            <img src="Images/footnote article.webp" class="project-image" id="image2" alt="Am I Employable? The Perspective of a History Undergraduate Student in Australia">
+                        </div>
+                        <div class="individual-card-back">
+                            <h3>Am I Employable? The Perspective of an Undergraduate History Student in Australia</h3>
+                            <p>When you study history, you get constantly asked, "So what job are you going to get?"</p>
+                            <p>Part-memoir, part-history, and part-analysis, I negotiate the unpredictable demands of labour markets and the fluctuating societal value of the humanities and answer the question: am I employable?</p>
+                            <a href="https://www.footnotejournal.com/am-i-employable-the-perspective-of"><button class="card-button">Read my article</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card publication">
+                <div class="individual-card">
                     <a href="https://journals.sagepub.com/doi/10.1177/1329878X211038286" class="timeline-title"><img src="Images/blacklivesmatter.jpeg" class="project-image" id="image3" alt="Disrupting the colonial algorithm: Indigenous Australia and social media">Disrupting the colonial algorithm: Indigenous Australia and social media</a>
-                    <h4><i>6 Oct 2021</i></h4>
+                    <h4><i>Oct 2021</i></h4>
                     <h4><b>Media International Australia | Journal Article</b></h4>
                     <p>Long before #BlackLivesMatter exploded in 2020, Indigenous Australians have used social media to express and reaffirm their identity, protest racial injustices, and dismantle 'colonial algorithms'.</p>
                     <p>I researched and co-authored this peer-reviewed journal article with the <a class="paragraph-hyperlink" href="https://atsis.uq.edu.au/indigenous-research/summer-and-winter-research-projects">UQ ATSIS Summer Research</href> program.</p>
                 </div>
-                <div class="individual-project">
+            </div>
+            <div class="card publication">
+                <div class="individual-card">
                     <a href="https://ventures.uq.edu.au/blog/2021/12/2021-ventures-ambassador-talks-female-entrepreneurs-early-modern-vietnam" class="timeline-title"><img src="Images/ventures.jpeg" class="project-image" id="image1" alt="2021 Ventures Ambassador talks: female entrepreneurs in early modern Vietnam">2021 Ventures Ambassador talks: female entrepreneurs in early modern Vietnam</a>
-                    <h4><i>8 Dec 2021</i></h4>
+                    <h4><i>Dec 2021</i></h4>
                     <h4><b>UQ Ventures | Blog</b></h4>
                     <p>Did you know that there were female entrepreneurs in early modern Vietnam?</p>
                     <p>Because yes, they existed. In fact, there were so many female traders that women dominated the marketplaces of Southeast Asia. In this blog, I reflect on the major findings of my Honours research.</p>
                 </div>
-                <div class="individual-project">
+            </div>
+            <div class="card publication">
+                <div class="individual-card">
                     <a href="https://www.newmandala.org/the-women-entrepreneurs-of-early-modern-vietnam/" class="timeline-title"><img src="Images/New Mandala.png" class="project-image" id="image1" alt="The women entrepreneurs of early modern Vietnam">The women entrepeneurs of early modern Vietnam</a>
-                    <h4><i>4 May 2022</i></h4>
+                    <h4><i>May 2022</i></h4>
                     <h4><b>New Mandala | Article</b></h4>
                     <p>Before there was any academic interest on female entrepreneurship and long before women were conceived of as girl bosses in public consciousness, they were central to the domestic Vietnamese economy.</p>
                     <p>However, this came with a cost. I take another deep dive into my Honours research.</p>
                 </div>
             </div>
+            <div class="card project">
+                <div class="individual-card">
+                    <a class="timeline-title"><img src="Images/IMG_3521.JPG" class="project-image" alt="Archivine">Archivine</a>
+                    <h4><i>Jun 2022</i></h4>
+                    <p>Through <a class="paragraph-hyperlink" href="https://shecodes.com.au/">She Codes Australia</a> 6-month PLUS program, I learnt how to code and created projects to consolidate my learning. My second project used Django to create a news website which I am in the process of rebranding into Archivine, the place for all tea lovers!</p>
+                </div>
+            </div>
+            <div class="card project">
+                <div class="individual-card">
+                    <a class="timeline-title"><img src="Images/IMG_3521.JPG" class="project-image" alt="Sprocket">Sprocket</a>
+                    <h4><i>Aug 2022</i></h4>
+                    <p>Sprocket is the place to launch your ideas. Built using DRF and ReactJS.</p>
+                </div>
+            </div>
+            <div class="card project">
+                <div class="individual-card">
+                    <a class="timeline-title"><img src="Images/IMG_3521.JPG" class="project-image" alt="Archivine">Allylab</a>
+                    <h4><i>Sep 2022</i></h4>
+                    <p>For our final <a class="paragraph-hyperlink" href="https://shecodes.com.au/">She Codes Australia</a> PLUS program, we worked in groups to complete a real-life client brief to showcase diverse role models in tech. I present to you - Allylab </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <p id="form-description">If you have questions, queries, want to connect or say hi, fill out the form below and I'll get back to you as soon as I can.</p>
+        <form action="https://formspree.io/f/xbjwzveg" method="post">
+        <div class="form-item">
+            <label for="first-name">First Name</label>
+            <input type="text" id="name" name="first-name">
+        </div>
+        <div class="form-item">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="name" name="last-name">
+        </div>
+        <div class="form-item">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="email">
+        </div>
+        <div class="form-item">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="form-item">
+            <button type="submit">Send</button>
+        </div>
+        </div>
+        </form>
     </section>
 
 </body>
