@@ -149,8 +149,9 @@ button {
     cursor: pointer;
     color: #67b435;
     background-color: black;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
+    font-family: 'Alata', serif;
 }
 
 button.active {
@@ -161,8 +162,9 @@ button.active {
 .all-cards {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    width: 100%;
-    gap: 8px;
+    width: 90%;
+    gap: 25px;
+    margin: 5%;
 }
 
 .card {
@@ -181,46 +183,55 @@ button.active {
 }
 
 /* Flip cards */
-.individual-card {
-    background-color: rgba(188, 188, 188, 0.345);
-    padding: 15px;
-    margin: 15px;
-    border-radius: 10%;
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    border-radius: 24px;
 }
 
-.individual-card-flip {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.individual-card:hover, .individual-card-flip {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-.individual-card-front, .individual-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.individual-card-back {
+.flip-card-front {
+    background-color: rgba(188, 188, 188, 0.345);
+    color: black;
+    border-radius: 24px;
+}
+
+.flip-card-back {
     background-color: rgba(188, 188, 188, 0.345);
     color: #67b435;
     transform: rotateY(180deg);
+    border-radius: 24px;
 }
 
 .project-image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    height: 300px;
     display: flex;
     justify-content: center;
+    border-radius: 24px;
 }
 
 .paragraph-hyperlink:hover {
@@ -230,8 +241,8 @@ button.active {
     text-decoration: none;
 }
 
-#projects h3 {
-    font-size: 16px;
+h3 {
+    font-size: 20px;
 }
 
 #projects p {
@@ -240,12 +251,22 @@ button.active {
     padding-bottom: 10px;
 }
 
+#image3 {
+    object-fit: 50% 20%;
+}
+
+
+
 .card-button {
     border-radius: 24px;
     border: 1px solid #67b435;
 }
 
 /* Contact*/
+#contact {
+    padding: 150px;
+}
+
 form {
     margin: 50px auto;
     width: 90%;
